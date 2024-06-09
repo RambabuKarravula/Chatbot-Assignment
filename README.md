@@ -1,5 +1,4 @@
-Sure, I can help you generate the content for the README file, including the issues you faced and how you resolved them. Here's a draft:
-Question Answering System for Israel-Hamas Conflict
+### Question Answering System for Israel-Hamas Conflict
 This project aims to build a rudimentary Question Answering system that can answer questions related to the Israel-Hamas war. The system is built using natural language processing techniques, language models, and data indexing libraries.
 Dataset
 The dataset for this project is a JSON file containing approximately 37,000 news articles from different sources reporting on the Israel-Hamas war. The articles were published between October 2023 and March 2024. However, not all articles in the dataset are relevant to the Israel-Hamas conflict, and some may contain noise such as punctuation, special characters, and irrelevant symbols.
@@ -11,7 +10,7 @@ Cleaning Text: Noise, such as punctuation, special characters, and irrelevant sy
 Handling Encoding Issues: During the preprocessing step, I encountered encoding issues with the JSON dataset, which caused JSONDecodeError exceptions. To resolve this, I implemented a custom decoder function that sanitized the data by encoding and decoding it with the 'ignore' option, which removed invalid control characters.
 Converting JSON to PDF: Additionally, I converted the JSON dataset to a PDF format for easier manual inspection and verification.
 
-Indexing
+### Indexing
 After cleaning the dataset, I used the LangChain library to index the data for efficient retrieval during question answering. The indexing process involved the following steps:
 
 Creating Document Objects: I created a list of Document objects from the 'articleBody' column of the cleaned dataset.
